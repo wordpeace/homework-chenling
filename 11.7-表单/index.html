@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset = "utf-8"/>
+        <title>homework-11.7</title>
+        <style>
+            body{
+                padding: 5%;
+            }
+        </style>
+    </head>
+
+    <body>
+    
+        <form name="form">
+            <label for="input">名称</label>
+            <input type="text" id="input"/>
+            <button id="test">验证</button>
+            <br>
+            
+        </form> 
+        
+        <div id = "warning"> please input 4~16 chars(每个英文字母、数字、英文符号长度为1，每个汉字，中文符号长度为2)</div>
+        
+        <script language="javascript" type="text/javascript">
+             
+            var input = document.getElementById('input'),
+                submit = document.getElementById('test'),
+                warning = document.getElementById('warning');
+            
+            //字符个数判断
+            function countchar(char) {  
+                var len = 0,temp=0;
+                for (var i=0; i<char.length; i++) {
+                    temp = 1;
+                    if (char.charCodeAt(i)>127 || char.charCodeAt(i)==94) {
+                        len = 2;
+                    }
+                    len += temp;
+                }
+                return len;
+            }
+            
+            //验证
+            test.addEventListener("click"{
+                var length=checkLength(input.value);
+                
+                if(length<4||length>16){
+                    warning.innerHTML="please input 4~16 chars(每个英文字母、数字、英文符号长度为1，每个汉字，中文符号长度为2)";
+                    warning.style.color="red";
+                }
+    
+
+    
+                if(length>=4&&length<=16){
+                    warning.innerHTML="验证成功!";
+                    warning.style.color="red";
+
+                }
+                
+                if(input.value==""){
+                    warning.innerHTML="名称不能为空!";
+                    warning.style.color="red";
+                });
+
+                    
+            }
+            
+           
+            
+        </script>
+    </body>
+
+</html>
