@@ -1,0 +1,192 @@
+body,html{
+    margin: 0;
+    padding:0;
+    height: 100%;
+}
+
+body {
+    background: url(../img/index_dim.jpg) 50% 0 no-repeat;
+    height: 850px;
+}
+
+
+#top{
+    margin: 0;
+    height: 64px;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.topLogo{
+    margin-left:19px;
+    text-align: left;
+    line-height: 80px;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#main .logoText{
+    background: url(../img/logo.png) no-repeat;
+    margin: 50px auto;
+    width: 377px;
+    height: 103px;
+}
+
+#main .show{
+    
+    margin: 50px auto;
+    height: 218px;
+    width: 1090px;
+}
+/*动画没写*/
+
+
+div .circle1 .pic1,div .circle1 .pic2,div .circle1 .pic3,
+div .circle2 .pic1,div .circle2 .pic2,div .circle2 .pic3,
+div .circle3 .pic1,div .circle3 .pic2,div .circle3 .pic3,
+div .circle4 .pic1,div .circle4 .pic2,div .circle4 .pic3,
+div .circle5 .pic1,div .circle5 .pic2,div .circle5 .pic3{
+    position:absolute;
+}
+
+.show div{
+    width:218px;
+    height: 217px;
+}
+
+div .circle1,div .circle2,div .circle3,div .circle4,div .circle5{
+    
+    float: left;
+    position: relative;
+    z-index:-2;
+}
+
+div .circle1:hover{
+    background: url(../img/index_hover_words1.png);
+    position: relative;
+    z-index:999;
+}
+/*悬停没效果*/
+
+.contact{
+    position: absolute;
+    height: auto;
+    left: 50%;
+    float: inherit;
+    margin-left: -108px;
+    width:216px;
+    text-align: center;
+}
+/*箭头及覆盖特效，位置 未写*/
+
+#mainDown .logoText{
+    
+    margin: 0 auto;
+    width: 377px;
+    height: 103px;
+}
+
+
+
+.intro{
+    display: block;
+    margin:50px;
+    max-height: 915px;
+    font-size: 18px;
+    color: #979797;
+    text-indent: 2em;
+    text-align: left;
+}
+
+#infor{
+    margin: 55px auto 38px;
+    width: 885px;
+}
+
+.information{
+    
+    float:left;
+    padding:20px 0px 20px 60px;
+    color: #979797;
+    
+}
+
+.form{
+    margin: 5px auto;
+    font-size: 18px;
+    color:#565656;
+    letter-spacing: 2px;
+    text-align: left;
+    padding: 0px 10px;
+    float: right;
+    width: 380px;
+}
+
+.infor p{
+    height: 1.5em;
+    line-height: 1.5em;
+}
+
+div.input_wrap {
+    margin-top: .625em;
+}
+
+div.input_wrap label {
+    display: block;
+    height: 1.5em;
+    line-height: 1.5em;
+}
+
+div.input_wrap label span {
+    color: #fa9a1c;
+    vertical-align: -4px;
+}
+
+div.input_wrap input,div.input_wrap textarea {
+    border: 1px solid #bfbfbf;
+    width: 372px;
+    padding: 2px;
+}
+
+div.input_wrap input {
+    height: 30px;
+}
+
+div.input_wrap input:focus {
+    outline: #f9991b solid 1px;
+    border: 1px solid #f9991b;
+}
+
+div.input_wrap textarea {
+    resize: none;
+    height: 166px;
+}
+
+div.input_wrap textarea:focus {
+    outline: #f9991b solid 1px;
+    border: 1px solid #f9991b;
+}
+
+#footer{
+    background-color: #282828;
+    color:aliceblue;
+    bottom: 0;
+    width:100%;
+    text-align: left;
+    clear:both;
+    margin: 0;
+    padding: 20px 10px 0px 50px;
+}
+
+.foot{
+    text-align: center;
+}
+
+.llink a{
+    text-decoration: none;
+    color:aliceblue;
+    display: inline-block;
+}
